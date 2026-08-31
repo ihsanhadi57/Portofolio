@@ -1,0 +1,95 @@
+@import 'aos/dist/aos.css';
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-navy: #1E2A4A;
+  --color-navy-light: #2C3E6B;
+  --color-navy-dark: #121B32;
+  --color-navy-subtle: #E8ECF4;
+  --color-navy-muted: #52628B;
+  --color-surface: #FAFAFA;
+  --color-surface-secondary: #F5F5F7;
+  --color-surface-card: #FFFFFF;
+}
+
+@layer base {
+  * {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #FAFAFA;
+    color: #0F172A;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #FAFAFA;
+    color: #334155;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #1E2A4A;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1E2A4A;
+}
+
+.shadow-clean {
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+}
+
+.shadow-clean-md {
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: #F8FAFC;
+  border: 1px solid #CBD5E1;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  color: #0F172A;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-field::placeholder {
+  color: #94A3B8;
+}
+
+.input-field:focus {
+  background-color: #FFFFFF;
+  border-color: #1E2A4A;
+  outline: none;
+}
