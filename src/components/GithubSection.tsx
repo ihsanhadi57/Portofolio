@@ -154,7 +154,7 @@ export const GithubSection: React.FC = () => {
           </div>
 
           {/* GitHub Calendar Component (Full Edge-to-Edge Fit, 4 Months, NO Empty Space) */}
-          <div className="bg-[#161B22]/80 border border-slate-800 rounded-xl p-2.5 sm:p-4 md:p-5 flex justify-center items-center overflow-hidden [&>div]:!overflow-hidden [&>div]:w-full [&_svg]:w-full [&_svg]:max-w-full [&_svg]:h-auto [&_svg]:mx-auto">
+          <div className="bg-[#161B22]/80 border border-slate-800 rounded-xl p-2.5 sm:p-4 md:p-5 flex justify-center items-center overflow-hidden [&>div]:w-full [&_svg]:max-w-full [&_svg]:h-auto [&_svg]:mx-auto">
             <GitHubCalendar
               username={username}
               colorScheme="dark"

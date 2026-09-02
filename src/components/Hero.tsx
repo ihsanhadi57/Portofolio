@@ -67,7 +67,7 @@ export const Hero: React.FC = () => {
       className="relative w-full min-h-screen pt-28 pb-16 px-6 bg-surface border-b border-slate-200 flex flex-col justify-between overflow-hidden"
     >
       {/* Background Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f015_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f015_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f015_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f015_1px,transparent_1px)] bg-size-[4rem_4rem] pointer-events-none" />
 
       {/* Social Links Vertical Column (Left Side) */}
       <div className="absolute left-6 top-1/2 -translate-y-1/2 z-20 hidden lg:flex flex-col items-center space-y-5 hero-fade-in">
@@ -96,13 +96,13 @@ export const Hero: React.FC = () => {
       <div className="relative max-w-7xl mx-auto w-full my-auto grid grid-cols-1 lg:grid-cols-3 gap-8 items-center z-10">
         
         {/* LEFT SIDE: Greeting & Name Word-by-Word Reveal */}
-        <div className="space-y-4 text-left lg:pl-6">
+        <div className="space-y-4 text-center lg:text-left lg:pl-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-slate-100 border border-slate-200 text-xs font-mono font-bold text-navy uppercase tracking-wider hero-fade-in">
             <span className="w-2 h-2 rounded-full bg-navy animate-pulse" />
             <span>Available for Work</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy tracking-tight uppercase leading-[1.1] flex flex-wrap gap-x-3 gap-y-1">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy tracking-tight uppercase leading-[1.1] flex flex-wrap justify-center lg:justify-start gap-x-3 gap-y-1">
             {leftText.split(' ').map((word, idx) => (
               <span
                 key={idx}
@@ -117,7 +117,7 @@ export const Hero: React.FC = () => {
             // Building high-performance mobile & full-stack web software
           </p>
 
-          <div className="pt-4 flex items-center gap-3 hero-fade-in">
+          <div className="pt-4 flex items-center justify-center lg:justify-start gap-3 hero-fade-in">
             <a
               href="#projects"
               className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-semibold text-white bg-navy border border-navy rounded hover:bg-navy-light transition-all"
@@ -149,12 +149,12 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* RIGHT SIDE: Role Headline Word-by-Word Reveal */}
-        <div className="space-y-3 lg:text-right lg:pr-6">
+        <div className="space-y-3 text-center lg:text-right lg:pr-6">
           <span className="text-xs font-mono uppercase tracking-wider text-slate-500 block hero-fade-in">
             Engineering Specialty
           </span>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy tracking-tight uppercase leading-tight flex flex-wrap lg:justify-end gap-x-3 gap-y-1">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy tracking-tight uppercase leading-tight flex flex-wrap justify-center lg:justify-end gap-x-3 gap-y-1">
             {rightText.split(' ').map((word, idx) => (
               <span
                 key={idx}

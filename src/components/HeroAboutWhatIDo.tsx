@@ -272,7 +272,7 @@ export const HeroAboutWhatIDo: React.FC = () => {
         {/* Hero Left: Name */}
         <div
           ref={heroLeftRef}
-          className="absolute top-28 sm:top-32 left-4 right-4 lg:relative lg:top-auto lg:left-auto lg:right-auto z-20 max-w-82.5 lg:space-y-2 pointer-events-auto text-center lg:text-left lg:pr-10"
+          className="absolute top-28 sm:top-32 left-4 right-4 mx-auto lg:relative lg:top-auto lg:left-auto lg:right-auto lg:mx-0 z-20 max-w-82.5 lg:space-y-2 pointer-events-auto text-center lg:text-left lg:pr-10"
         >
           <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-500 font-mono block mb-1 lg:mb-0">
             Hello! I'm
@@ -311,7 +311,7 @@ export const HeroAboutWhatIDo: React.FC = () => {
         {/* ------------------------------------------------------------- */}
         <div
           ref={aboutRef}
-          className="absolute left-4 right-4 sm:left-8 sm:right-8 lg:left-auto lg:right-16 top-[63%] sm:top-[60%] lg:top-[50%] -translate-y-1/2 z-20 max-w-xl space-y-2 sm:space-y-3 pointer-events-auto text-center lg:text-left bg-transparent p-0 border-none shadow-none"
+          className="absolute left-4 right-4 sm:left-8 sm:right-8 lg:left-auto lg:right-16 top-[63%] sm:top-[60%] lg:top-[50%] -translate-y-1/2 z-20 max-w-xl mx-auto lg:mx-0 space-y-2 sm:space-y-3 pointer-events-auto text-center lg:text-left bg-transparent p-0 border-none shadow-none"
         >
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy uppercase tracking-tight flex flex-wrap justify-center lg:justify-start gap-x-2">
             {'ABOUT ME'.split(' ').map((word, idx) => (
@@ -346,7 +346,7 @@ export const HeroAboutWhatIDo: React.FC = () => {
         {/* Right Side Stacked Expandable Role Cards */}
         <div
           ref={cardsRef}
-          className="absolute left-4 right-4 sm:left-8 sm:right-8 lg:left-auto lg:right-16 top-[60%] lg:top-[55%] -translate-y-1/2 z-20 max-w-sm sm:max-w-md w-auto lg:w-full space-y-3 sm:space-y-4 pointer-events-auto opacity-0"
+          className="absolute left-4 right-4 sm:left-8 sm:right-8 lg:left-auto lg:right-16 top-[60%] lg:top-[55%] -translate-y-1/2 z-20 max-w-sm sm:max-w-md w-auto lg:w-full mx-auto lg:mx-0 space-y-3 sm:space-y-4 pointer-events-auto opacity-0"
         >
           {/* CARD 1: FLUTTER ENGINEER */}
           <div

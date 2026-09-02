@@ -3,7 +3,7 @@ import { UserCheck, CheckCircle2, Zap } from 'lucide-react'
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="py-28 px-6 bg-[#FAFAFA] border-b border-slate-200">
+    <section id="about" className="py-28 px-6 bg-surface border-b border-slate-200">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           

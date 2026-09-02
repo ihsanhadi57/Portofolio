@@ -18,10 +18,14 @@ export const Projects: React.FC = () => {
       const track = trackRef.current
       if (!container || !track) return
 
-      // Ultra-Fast GSAP Horizontal Scroll Sequence
+      // Smooth GSAP Horizontal Scroll Sequence for Mobile & Desktop
       const getScrollAmount = () => {
-        return -(track.scrollWidth - window.innerWidth + 120)
+        const isMobile = window.innerWidth < 768
+        const padding = isMobile ? 32 : 120
+        return -(track.scrollWidth - window.innerWidth + padding)
       }
+
+      const isMobile = window.innerWidth < 768
 
       gsap.to(track, {
         x: getScrollAmount,
@@ -29,9 +33,15 @@ export const Projects: React.FC = () => {
         scrollTrigger: {
           trigger: container,
           start: 'top top',
-          end: () => `+=${track.scrollWidth * 0.22}`,
+          end: () => {
+            const isMobileScreen = window.innerWidth < 768
+            const scrollDistance = track.scrollWidth - window.innerWidth
+            // On mobile touch screens, use a 1.2x multiplier so swipe scrolling feels controlled & smooth
+            const multiplier = isMobileScreen ? 1.2 : 0.8
+            return `+=${Math.max(scrollDistance * multiplier, 800)}`
+          },
           pin: true,
-          scrub: 0.2,
+          scrub: isMobile ? 0.6 : 0.3,
           invalidateOnRefresh: true,
           anticipatePin: 1,
         },
